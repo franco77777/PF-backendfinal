@@ -23,7 +23,7 @@ const flights2Schema = new Schema(
       type: String,
       required: true,
     },
-    flightID: {
+    flightId: {
       type: Number,
       required: true,
     },

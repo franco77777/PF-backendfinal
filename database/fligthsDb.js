@@ -9,7 +9,7 @@ const fligthsDb = async () => {
         const create = new Flights({
           destination: e[0],
           airport: e[1],
-          flight: e[2],
+          flightId: e[2],
           departs: e[3],
           status: e[4],
           gate: e[5],
@@ -24,7 +24,7 @@ const fligthsDb = async () => {
         const create = new Flights2({
           destination: e[0],
           airport: e[1],
-          flight: e[2],
+          flightId: e[2],
           departs: e[3],
           status: e[4],
           gate: e[5],
