@@ -1,9 +1,9 @@
 const User = require("../models/users")
 const Login = async (req, res) => {
   try {
-    const { name, password } = req.body
+    const { email, password } = req.body
 
-    const userExist = await User.findOne({ name })
+    const userExist = await User.findOne({ email })
     if (userExist) {
       if (!(await userExist.comparesPassword(password))) {
         return res.json("Incorrect Password")

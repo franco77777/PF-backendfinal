@@ -32,17 +32,6 @@ const flightsAvailableDelete = async (req, res) => {
 const flightsAvailableUpdate = async (req, res) => {
   try {
     const { id } = req.params
-    const { password, name } = req.body
-
-    if (password) {
-      const salt = await bcrypt.genSalt(5)
-      const dos = await bcrypt.hash(password, salt)
-      await FlightsAvailable.findByIdAndUpdate(id, {
-        name: name,
-        password: dos,
-      })
-      return res.send("FlightsAvailable updated")
-    }
     await FlightsAvailable.findByIdAndUpdate(id, req.body)
     return res.send("listo")
   } catch (error) {

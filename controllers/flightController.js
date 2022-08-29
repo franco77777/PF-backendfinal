@@ -1,6 +1,5 @@
 const Flights = require("../models/flights")
 
-
 const flightsGet = async (req, res) => {
   try {
     const resultado = await Flights.find().lean()
@@ -33,14 +32,6 @@ const flightsDelete = async (req, res) => {
 const flightsUpdate = async (req, res) => {
   try {
     const { id } = req.params
-    const { password, name } = req.body
-
-    if (password) {
-      const salt = await bcrypt.genSalt(5)
-      const dos = await bcrypt.hash(password, salt)
-      await Flights.findByIdAndUpdate(id, { name: name, password: dos })
-      return res.send("Flights updated")
-    }
     await Flights.findByIdAndUpdate(id, req.body)
     return res.send("listo")
   } catch (error) {
@@ -49,4 +40,3 @@ const flightsUpdate = async (req, res) => {
 }
 
 module.exports = { flightsGet, flightsUpdate, flightsDelete, flightsCreate }
-

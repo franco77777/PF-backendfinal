@@ -1,4 +1,5 @@
 deploy: https://pf-viajes-final.herokuapp.com
+local server: http://localhost:3001
 
                                                    RUTAS:
 
@@ -8,14 +9,21 @@ deploy: https://pf-viajes-final.herokuapp.com
 \_numero de asiento=................"seatId" (number)
 \_numero de vuelo=..................."flightId" (number)
 \_precio final de venta=............."finalPrice" (number)
-\_origen de partida=................."origin" (string)
-\_destino de aterrizaje=............."destination" (string)
+\_origen de partida=................."origin"
+\_destino de aterrizaje=............."destination"
 \_numero de equipaje=................"baggageId" (number)
 
 -/users: lista de usuarios y admins (state)
 \_nombre=..........................."name"
+\_apellido=.........................."surname"
 \_contraseña=......................."password"
+\_sexo=.............................."sex"
+\_nacionalidad......................."nationality"
+\_DNI=..............................."DNI"
+\_telefono=.........................."phone"
+\_e-mail=............................"email"
 \_estado=..........................."state"
+\_transacciones......................"transactions"(esta se llena mediante la ruta /transactions)
 
 -/flights: muestra en tiempo real los vuelos que estan a punto de salir en el dia, incluye:
 \_destino = ........................"destination"

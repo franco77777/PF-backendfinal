@@ -12,8 +12,8 @@ const userGet = async (req, res) => {
 
 const userCreate = async (req, res) => {
   try {
-    const { name } = req.body
-    const exist = await User.findOne({ name })
+    const { email } = req.body
+    const exist = await User.findOne({ email })
     if (exist) {
       return res.send("user already exist")
     }
@@ -38,13 +38,13 @@ const userDelete = async (req, res) => {
 const userUpdate = async (req, res) => {
   try {
     const { id } = req.params
-    const { password, name } = req.body
-    const exist = await User.findOne({ name })
-    if (exist) return res.send("user already exist")
+    const { password } = req.body
+
     if (password) {
       const salt = await bcrypt.genSalt(5)
       const dos = await bcrypt.hash(password, salt)
-      await User.findByIdAndUpdate(id, { name: name, password: dos })
+      await User.findByIdAndUpdate(id, req.body)
+      await User.findByIdAndUpdate(id, { password: dos })
       return res.send("user updated")
     }
     await User.findByIdAndUpdate(id, req.body)

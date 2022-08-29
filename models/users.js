@@ -7,11 +7,35 @@ const usersSchema = new Schema(
     name: {
       type: String,
       require: true,
-      unique: true,
+    },
+    surname: {
+      type: String,
+      require: true,
     },
     password: {
       type: String,
       require: true,
+    },
+    sex: {
+      type: String,
+      require: true,
+    },
+    nationality: {
+      type: String,
+      require: true,
+    },
+    DNI: {
+      type: Number,
+      required: true,
+    },
+    phone: {
+      type: Number,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
     },
     status: {
       type: String,
@@ -21,7 +45,7 @@ const usersSchema = new Schema(
     },
     transactions: {
       type: Array,
-      }
+    },
   },
   { versionKey: false }
 )
