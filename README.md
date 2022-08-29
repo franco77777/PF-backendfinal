@@ -2,14 +2,22 @@ deploy: https://pf-viajes-final.herokuapp.com
 
                                                    RUTAS:
 
--login: verifica datos de login de usuarios y admins
+-/login: verifica datos de login de usuarios y admins
 
--users: lista de usuarios y admins
-\_nombre=............................"name"
-\_contraseña=........................"password"
-\_estado=............................"user" || "admin"
+-/transaction: es la ruta que guardara las transacciones de los usuarios:
+\_numero de asiento=................"seatId" (number)
+\_numero de vuelo=..................."flightId" (number)
+\_precio final de venta=............."finalPrice" (number)
+\_origen de partida=................."origin" (string)
+\_destino de aterrizaje=............."destination" (string)
+\_numero de equipaje=................"baggageId" (number)
 
--flights: muestra en tiempo real los vuelos que estan a punto de salir en el dia, incluye:
+-/users: lista de usuarios y admins (state)
+\_nombre=..........................."name"
+\_contraseña=......................."password"
+\_estado=..........................."state"
+
+-/flights: muestra en tiempo real los vuelos que estan a punto de salir en el dia, incluye:
 \_destino = ........................"destination"
 \_aeropuerto = ....................."airport"
 \_numero de vuelo = ................"flightID" (number)
@@ -18,9 +26,9 @@ deploy: https://pf-viajes-final.herokuapp.com
 \_puerto de embarque = ............."gate"
 \_fecha = .........................."date"
 
--flights2: muestra en tiempo real los vuelos que estan en el aire y donde van a aterrizar, contiene los mismos datos que flights
+-/flights2: muestra en tiempo real los vuelos que estan en el aire y donde van a aterrizar, contiene los mismos datos que flights
 
--flightsAvailable:muestra la lista de vuelos programados, incluye:
+-/flightsAvailable:muestra la lista de vuelos programados, incluye:
 \_origen = ........................."origin"
 \_destino = ........................"destination"
 \_imagen del destino = ............."img"

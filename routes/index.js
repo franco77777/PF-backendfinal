@@ -1,6 +1,7 @@
 const { Router } = require("express")
 
 const {
+  usertransaction,
   userCreate,
   userGet,
   userDelete,
@@ -32,13 +33,14 @@ const login = require("../controllers/loginController")
 
 const router = Router()
 
-
 router.get("/login", login)
 
 router.get("/user", userGet)
 router.post("/user", userCreate)
 router.put("/user/:id", userUpdate)
 router.delete("/user/:id", userDelete)
+
+router.post("/transaction/:id", usertransaction)
 
 router.get("/flights", flightsGet)
 router.post("/flights", flightsCreate)

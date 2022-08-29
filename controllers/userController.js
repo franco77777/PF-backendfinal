@@ -13,7 +13,8 @@ const userGet = async (req, res) => {
 const userCreate = async (req, res) => {
   try {
     const { name } = req.body
-    if (name) {
+    const exist = await User.findOne({ name })
+    if (exist) {
       return res.send("user already exist")
     }
     const create = new User(req.body)
@@ -53,4 +54,35 @@ const userUpdate = async (req, res) => {
   }
 }
 
-module.exports = { userCreate, userGet, userDelete, userUpdate }
+const usertransaction = async (req, res) => {
+  try {
+    const { id } = req.params
+    const { asiento, vuelo, precio, origen, destino, equipaje } = req.body
+    if (!asiento || !vuelo || !precio || !origen || !destino || !equipaje) {
+      return res.send("missing data")
+    }
+    await User.findByIdAndUpdate(id, {
+      $push: {
+        transactions: {
+          seatId: asiento,
+          fligthId: vuelo,
+          finalPrice: precio,
+          origin: origen,
+          destination: destino,
+          baggageId: equipaje,
+        },
+      },
+    })
+    res.send("transaction made")
+  } catch (error) {
+    return res.send(console.log("error when making the transanction", error))
+  }
+}
+
+module.exports = {
+  userCreate,
+  userGet,
+  userDelete,
+  userUpdate,
+  usertransaction,
+}

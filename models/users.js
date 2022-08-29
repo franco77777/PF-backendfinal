@@ -2,24 +2,29 @@ const mongoose = require("mongoose")
 const { Schema } = mongoose
 const bcrypt = require("bcryptjs")
 
-const usersSchema = new Schema({
-  name: {
-    type: String,
-    require: true,
-    unique: true,
+const usersSchema = new Schema(
+  {
+    name: {
+      type: String,
+      require: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      require: true,
+    },
+    status: {
+      type: String,
+      enum: ["user", "admin"],
+      required: true,
+      default: "user",
+    },
+    transactions: {
+      type: Array,
+      }
   },
-  password: {
-    type: String,
-    require: true,
-    unique: true,
-  },
-  status: {
-    type: String,
-    enum: ["user", "admin"],
-    required: true,
-    default: "user",
-  },
-})
+  { versionKey: false }
+)
 
 usersSchema.pre("save", async function (next) {
   const user = this

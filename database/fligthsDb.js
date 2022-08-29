@@ -33,7 +33,6 @@ const fligthsDb = async () => {
         await create.save()
       })
     }
-    console.log("soy resultado")
   } catch (error) {
     console.log("error at create flights database", error)
   }
