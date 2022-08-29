@@ -1,14 +1,6 @@
 const { Router } = require("express")
 
 const {
-  adminLogin,
-  adminCreate,
-  adminDelete,
-  adminUpdate,
-  adminGet,
-} = require("./../controllers/adminController")
-
-const {
   userCreate,
   userGet,
   userDelete,
@@ -38,11 +30,8 @@ const {
 
 const login = require("../controllers/loginController")
 
-const personalChange = require("../controllers/personalController")
-
 const router = Router()
 
-router.put("/change/:id", personalChange)
 
 router.get("/login", login)
 
@@ -50,11 +39,6 @@ router.get("/user", userGet)
 router.post("/user", userCreate)
 router.put("/user/:id", userUpdate)
 router.delete("/user/:id", userDelete)
-
-router.get("/admin", adminGet)
-router.post("/admin", adminCreate)
-router.put("/admin/:id", adminUpdate)
-router.delete("/admin/:id", adminDelete)
 
 router.get("/flights", flightsGet)
 router.post("/flights", flightsCreate)

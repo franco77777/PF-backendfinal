@@ -1,6 +1,5 @@
-const User = require("./../models/users")
+const User = require("../models/users")
 const bcrypt = require("bcryptjs")
-const Admin = require("./../models/admin")
 
 const userGet = async (req, res) => {
   try {
@@ -14,15 +13,14 @@ const userGet = async (req, res) => {
 const userCreate = async (req, res) => {
   try {
     const { name } = req.body
-    const exist = await Admin.findOne({ name })
-    if (exist) {
+    if (name) {
       return res.send("user already exist")
     }
     const create = new User(req.body)
     await create.save()
-    return res.send("user created")
+    return res.send(`${create.status} created`)
   } catch (error) {
-    return res.send("error at create user", error)
+    return res.send(`error at create`, error)
   }
 }
 
@@ -40,7 +38,8 @@ const userUpdate = async (req, res) => {
   try {
     const { id } = req.params
     const { password, name } = req.body
-
+    const exist = await User.findOne({ name })
+    if (exist) return res.send("user already exist")
     if (password) {
       const salt = await bcrypt.genSalt(5)
       const dos = await bcrypt.hash(password, salt)
@@ -50,7 +49,7 @@ const userUpdate = async (req, res) => {
     await User.findByIdAndUpdate(id, req.body)
     return res.send("user update")
   } catch (error) {
-    return res.send("error at update user", error)
+    return res.send(`error at update user`, error)
   }
 }
 

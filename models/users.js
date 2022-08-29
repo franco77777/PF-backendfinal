@@ -13,6 +13,12 @@ const usersSchema = new Schema({
     require: true,
     unique: true,
   },
+  status: {
+    type: String,
+    enum: ["user", "admin"],
+    required: true,
+    default: "user",
+  },
 })
 
 usersSchema.pre("save", async function (next) {
