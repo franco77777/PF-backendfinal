@@ -36,7 +36,15 @@ const {
   flightsAvailableCreate,
 } = require("../controllers/flightsAvailableController")
 
+const login = require("../controllers/loginController")
+
+const personalChange = require("../controllers/personalController")
+
 const router = Router()
+
+router.put("/change/:id", personalChange)
+
+router.get("/login", login)
 
 router.get("/user", userGet)
 router.post("/user", userCreate)

@@ -1,5 +1,6 @@
 const User = require("./../models/users")
 const bcrypt = require("bcryptjs")
+const Admin = require("./../models/admin")
 
 const userGet = async (req, res) => {
   try {
@@ -13,7 +14,7 @@ const userGet = async (req, res) => {
 const userCreate = async (req, res) => {
   try {
     const { name } = req.body
-    const exist = await User.findOne({ name })
+    const exist = await Admin.findOne({ name })
     if (exist) {
       return res.send("user already exist")
     }
@@ -47,7 +48,7 @@ const userUpdate = async (req, res) => {
       return res.send("user updated")
     }
     await User.findByIdAndUpdate(id, req.body)
-    return res.send("listo")
+    return res.send("user update")
   } catch (error) {
     return res.send("error at update user", error)
   }

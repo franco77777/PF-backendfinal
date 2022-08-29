@@ -12,6 +12,7 @@ const flightsSchema = new Schema({
   },
   gate: {
     type: String,
+    required: true,
   },
   departs: {
     type: String,
@@ -21,8 +22,12 @@ const flightsSchema = new Schema({
     type: String,
     required: true,
   },
-  flight: {
+  flightID: {
     type: Number,
+    required: true,
+  },
+  date: {
+    type: String,
     required: true,
   },
 })

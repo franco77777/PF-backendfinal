@@ -12,6 +12,7 @@ const flights2Schema = new Schema({
   },
   gate: {
     type: String,
+    required:true
   },
   departs: {
     type: String,
@@ -21,10 +22,14 @@ const flights2Schema = new Schema({
     type: String,
     required: true,
   },
-  flight: {
+  flightID: {
     type: Number,
     required: true,
   },
+  date: {
+    type: String,
+    required:true
+  }
 })
 
 module.exports = mongoose.model("flights2", flights2Schema)

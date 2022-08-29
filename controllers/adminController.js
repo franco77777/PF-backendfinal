@@ -1,9 +1,10 @@
 const Admin = require("./../models/admin")
-const bcrypt = require('bcryptjs')
+const bcrypt = require("bcryptjs")
+const User = require("./../models/users")
 
 const adminLogin = async (req, res) => {
   try {
-    const { name, password } = req.body
+    const { name, password,status } = req.body
     const exist = await Admin.findOne({ name: name })
     console.log(exist)
     if (!exist) return res.json([false, "nonexistent admin name"])
@@ -27,11 +28,16 @@ const adminGet = async (req, res) => {
 
 const adminCreate = async (req, res) => {
   try {
+    const { name } = req.body
+    const exist = await User.findOne({ name })
+    if (exist) {
+      return res.send("user name already exist")
+    }
     const newAdmin = new Admin(req.body)
     await newAdmin.save()
     return res.send("admin created")
   } catch (error) {
-    return res.send(console.log("error admin creacion", error))
+    return res.send(console.log("error at admin creacion", error))
   }
 }
 
@@ -49,7 +55,10 @@ const adminUpdate = async (req, res) => {
   try {
     const { id } = req.params
     const { password, name } = req.body
-
+    const exist = await User.findOne({ name: name })
+    if (exist) {
+      return res.send("name already exist")
+    }
     if (password) {
       const salt = await bcrypt.genSalt(5)
       const dos = await bcrypt.hash(password, salt)
@@ -57,7 +66,7 @@ const adminUpdate = async (req, res) => {
       return res.send("admin updated")
     }
     await Admin.findByIdAndUpdate(id, req.body)
-    return res.send("listo")
+    return res.send("admin updated")
   } catch (error) {
     return res.send("error at update admin", error)
   }
