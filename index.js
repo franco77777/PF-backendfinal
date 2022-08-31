@@ -9,7 +9,7 @@ const corseoptions = {
   credentials: true,
   origin: process.env.PATHHEROKU || "*",
 }
-app.use(cors(corseoptions))
+app.use(cors())
 app.use(express.json())
 app.use("/", router)
 app.use(express.urlencoded({ extended: true }))
