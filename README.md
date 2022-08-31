@@ -28,7 +28,7 @@ local server: http://localhost:3001
 -/flights: muestra en tiempo real los vuelos que estan a punto de salir en el dia, incluye:
 \_destino = ........................"destination"
 \_aeropuerto = ....................."airport"
-\_numero de vuelo = ................"flightID" (number)
+\_numero de vuelo = ................"flightId" (number)
 \_horario de partida = ............."departs"
 \_estado si esta retrasado = ......."status"
 \_puerto de embarque = ............."gate"
@@ -41,7 +41,7 @@ local server: http://localhost:3001
 \_destino = ........................"destination"
 \_imagen del destino = ............."img"
 \_aeropuerto de salida = ..........."airport"
-\_numero de vuelo = ................"flightID" (number)
+\_numero de vuelo = ................"flightId" (number)
 \_horario de partida = ............."departs"
 \_estado si esta retrasado = ......."status"
 \_sala de embarque = ..............."gate"
