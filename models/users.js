@@ -39,7 +39,7 @@ const usersSchema = new Schema(
     },
     status: {
       type: String,
-      enum: ["user", "admin"],
+      enum: ["user", "admin", "banned"],
       required: true,
       default: "user",
     },
