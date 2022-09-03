@@ -52,7 +52,6 @@ const flights3Schema = new Schema(
       type: Number,
       required: true,
     },
-    required: true,
   },
   { versionKey: false }
 )
