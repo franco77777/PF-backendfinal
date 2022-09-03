@@ -6,17 +6,17 @@ const availableFlights = async () => {
       const create = new FlightsAvailable({
         origin: e[0],
         destination: e[1],
-        img: e[2],
-        airport: e[3],
-        flightId: e[4],
-        departs: e[5],
-        status: e[6],
-        gate: e[7],
-        date: e[8],
-        price: e[9],
-        firstclase: e[10],
-        seating: e[11],
-        duration: e[12],
+
+        airport: e[2],
+        flightId: e[3],
+        departs: e[4],
+        status: e[5],
+        gate: e[6],
+        date: e[7],
+        price: e[8],
+        firstclase: e[9],
+        seating: e[10],
+        duration: e[11],
       })
       await create.save()
     })
@@ -27,7 +27,7 @@ const s = [
   [
     "Canada",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2585,
     "11:11 AM",
@@ -42,7 +42,7 @@ const s = [
   [
     "Canada",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2280,
     "1:35 PM",
@@ -57,7 +57,7 @@ const s = [
   [
     "Canada",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2841,
     "3:15 PM",
@@ -72,7 +72,7 @@ const s = [
   [
     "Canada",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "American",
     4241,
     "7:28 AM",
@@ -87,7 +87,7 @@ const s = [
   [
     "Canada",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Delta",
     4650,
     "7:34 AM",
@@ -102,7 +102,7 @@ const s = [
   [
     "Canada",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     661,
     "5:00 AM",
@@ -117,7 +117,7 @@ const s = [
   [
     "Canada",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     2137,
     "7:00 AM",
@@ -132,7 +132,7 @@ const s = [
   [
     "Canada",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "Delta",
     4508,
     "4:00 PM",
@@ -147,7 +147,7 @@ const s = [
   [
     "Canada",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5556,
     "7:51 AM",
@@ -162,7 +162,7 @@ const s = [
   [
     "Canada",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5543,
     "11:03 AM",
@@ -177,7 +177,7 @@ const s = [
   [
     "Brasil",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     3332,
     "12:35 PM",
@@ -192,7 +192,7 @@ const s = [
   [
     "Ecuador",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare American",
     3941,
     "7:05 AM",
@@ -207,7 +207,7 @@ const s = [
   [
     "Brasil",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3440,
     "7:15 AM",
@@ -222,7 +222,7 @@ const s = [
   [
     "Brasil",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3754,
     "11:18 AM",
@@ -237,7 +237,7 @@ const s = [
   [
     "Canada",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "Worth American",
     1970,
     "6:00 AM",
@@ -252,7 +252,7 @@ const s = [
   [
     "Canada",
     "Ecuador",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtq6qQzgH5BW6C4LFauidd1q2JZljhlhbyAQ&usqp=CAU",
+
     "Worth American",
     1486,
     "9:02 AM",
@@ -267,7 +267,7 @@ const s = [
   [
     "Brasil",
     "Peru",
-    "https://static.metrojourneys.com/wp-content/uploads/2019/07/machu-picchu-peru-tours.jpg",
+
     "Allegiant",
     367,
     "7:00 AM",
@@ -282,7 +282,7 @@ const s = [
   [
     "Brasil",
     "Peru",
-    "https://static.metrojourneys.com/wp-content/uploads/2019/07/machu-picchu-peru-tours.jpg",
+
     "Delta",
     518,
     "7:00 AM",
@@ -297,7 +297,7 @@ const s = [
   [
     "Brasil",
     "Peru",
-    "https://static.metrojourneys.com/wp-content/uploads/2019/07/machu-picchu-peru-tours.jpg",
+
     "United",
     749,
     "8:14 AM",
@@ -312,7 +312,7 @@ const s = [
   [
     "Brasil",
     "Colombia",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5f/dd/de/caption.jpg?w=500&h=300&s=1",
+
     "Delta",
     5027,
     "6:05 AM",
@@ -327,7 +327,7 @@ const s = [
   [
     "Brasil",
     "Colombia",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5f/dd/de/caption.jpg?w=500&h=300&s=1",
+
     "Delta",
     4800,
     "10:25 AM",
@@ -342,7 +342,7 @@ const s = [
   [
     "Brasil",
     "Venezuela",
-    "https://www.caracteristicas.co/wp-content/uploads/2018/08/venezuela-1-800x406.jpg",
+
     "Delta",
     2260,
     "7:20 AM",
@@ -357,7 +357,7 @@ const s = [
   [
     "Chile",
     "Canada",
-    "https://w0.peakpx.com/wallpaper/168/634/HD-wallpaper-little-hazel-creek-at-sunset-canda-village-river-sunset-clouds.jpg",
+
     "Worth American",
     1502,
     "1:49 PM",
@@ -372,7 +372,7 @@ const s = [
   [
     "Chile",
     "Canada",
-    "https://w0.peakpx.com/wallpaper/168/634/HD-wallpaper-little-hazel-creek-at-sunset-canda-village-river-sunset-clouds.jpg",
+
     "Worth American",
     2166,
     "5:20 PM",
@@ -387,7 +387,7 @@ const s = [
   [
     "Chile",
     "Venezuela",
-    "https://www.caracteristicas.co/wp-content/uploads/2018/08/venezuela-1-800x406.jpg",
+
     "Allegiant",
     381,
     "5:00 PM",
@@ -402,7 +402,7 @@ const s = [
   [
     "Argentina",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -417,7 +417,7 @@ const s = [
   [
     "Argentina",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Frontier",
     1662,
     "5:57 PM",
@@ -432,7 +432,7 @@ const s = [
   [
     "Argentina",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -447,7 +447,7 @@ const s = [
   [
     "Argentina",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -462,7 +462,7 @@ const s = [
   [
     "Argentina",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -477,7 +477,7 @@ const s = [
   [
     "Argentina",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -492,7 +492,7 @@ const s = [
   [
     "Argentina",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -507,7 +507,7 @@ const s = [
   [
     "Argentina",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -522,7 +522,7 @@ const s = [
   [
     "Argentina",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -537,7 +537,7 @@ const s = [
   [
     "Argentina",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -552,7 +552,7 @@ const s = [
   [
     "Argentina",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -567,7 +567,7 @@ const s = [
   [
     "Argentina",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -582,7 +582,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -597,7 +597,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Frontier",
     1663,
     "5:57 PM",
@@ -612,7 +612,7 @@ const s = [
   [
     "Mexico",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -627,7 +627,7 @@ const s = [
   [
     "Puerto Rico",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -642,7 +642,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -657,7 +657,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -672,7 +672,7 @@ const s = [
   [
     "Puerto Rico",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -687,7 +687,7 @@ const s = [
   [
     "Puerto Rico",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -702,7 +702,7 @@ const s = [
   [
     "Paraguay",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -717,7 +717,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -732,7 +732,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -747,7 +747,7 @@ const s = [
   [
     "Paraguay",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -762,7 +762,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -777,7 +777,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Frontier",
     1664,
     "5:57 PM",
@@ -792,7 +792,7 @@ const s = [
   [
     "Mexico",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -807,7 +807,7 @@ const s = [
   [
     "Puerto Rico",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -822,7 +822,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -837,7 +837,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -852,7 +852,7 @@ const s = [
   [
     "Puerto Rico",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -867,7 +867,7 @@ const s = [
   [
     "Puerto Rico",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -882,7 +882,7 @@ const s = [
   [
     "Paraguay",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -897,7 +897,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -912,7 +912,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -927,7 +927,7 @@ const s = [
   [
     "Paraguay",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -942,7 +942,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -957,7 +957,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Frontier",
     1665,
     "5:57 PM",
@@ -972,7 +972,7 @@ const s = [
   [
     "Mexico",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -987,7 +987,7 @@ const s = [
   [
     "Puerto Rico",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -1002,7 +1002,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -1017,7 +1017,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -1032,7 +1032,7 @@ const s = [
   [
     "Puerto Rico",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -1047,7 +1047,7 @@ const s = [
   [
     "Puerto Rico",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -1062,7 +1062,7 @@ const s = [
   [
     "Paraguay",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -1077,7 +1077,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -1092,7 +1092,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -1107,7 +1107,7 @@ const s = [
   [
     "Paraguay",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -1122,7 +1122,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -1137,7 +1137,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Frontier",
     1666,
     "5:57 PM",
@@ -1152,7 +1152,7 @@ const s = [
   [
     "Mexico",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -1167,7 +1167,7 @@ const s = [
   [
     "Puerto Rico",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -1182,7 +1182,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -1197,7 +1197,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -1212,7 +1212,7 @@ const s = [
   [
     "Puerto Rico",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -1227,7 +1227,7 @@ const s = [
   [
     "Puerto Rico",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -1242,7 +1242,7 @@ const s = [
   [
     "Paraguay",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -1257,7 +1257,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -1272,7 +1272,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -1287,7 +1287,7 @@ const s = [
   [
     "Paraguay",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -1302,7 +1302,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -1317,7 +1317,7 @@ const s = [
   [
     "Mexico",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Frontier",
     1667,
     "5:57 PM",
@@ -1332,7 +1332,7 @@ const s = [
   [
     "Mexico",
     "Puerto Rico",
-    "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/islands/porto-rico/10-porto-rico-694x390.jpg.image.694.390.low.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -1347,7 +1347,7 @@ const s = [
   [
     "Puerto Rico",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -1362,7 +1362,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -1377,7 +1377,7 @@ const s = [
   [
     "Puerto Rico",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -1392,7 +1392,7 @@ const s = [
   [
     "USA",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -1407,7 +1407,7 @@ const s = [
   [
     "USA",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -1422,7 +1422,7 @@ const s = [
   [
     "Paraguay",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -1437,7 +1437,7 @@ const s = [
   [
     "Paraguay",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -1452,7 +1452,7 @@ const s = [
   [
     "Uruguay",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -1467,7 +1467,7 @@ const s = [
   [
     "Mexico",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -1482,7 +1482,7 @@ const s = [
   [
     "Brasil",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Delta",
     2622,
     "5:05 PM",
@@ -1497,7 +1497,7 @@ const s = [
   [
     "Mexico",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Frontier",
     1668,
     "5:57 PM",
@@ -1512,7 +1512,7 @@ const s = [
   [
     "Argentina",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Allegiant",
     1510,
     "12:30 PM",
@@ -1527,7 +1527,7 @@ const s = [
   [
     "USA",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "American",
     3949,
     "5:00 PM",
@@ -1542,7 +1542,7 @@ const s = [
   [
     "USA",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     110,
     "10:50 AM",
@@ -1557,7 +1557,7 @@ const s = [
   [
     "USA",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     2317,
     "6:05 PM",
@@ -1572,7 +1572,7 @@ const s = [
   [
     "USA",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     559,
     "10:10 AM",
@@ -1587,7 +1587,7 @@ const s = [
   [
     "USA",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "American",
     4913,
     "1:25 PM",
@@ -1602,7 +1602,7 @@ const s = [
   [
     "Paraguay",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "Delta",
     1328,
     "4:30 PM",
@@ -1617,7 +1617,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5141,
     "3:30 PM",
@@ -1632,7 +1632,7 @@ const s = [
   [
     "Paraguay",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5129,
     "5:56 PM",
@@ -1647,7 +1647,7 @@ const s = [
   [
     "Paraguay",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3556,
     "6:00 AM",
@@ -1662,7 +1662,7 @@ const s = [
   [
     "Colombia",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2585,
     "11:11 AM",
@@ -1677,7 +1677,7 @@ const s = [
   [
     "Colombia",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2281,
     "1:35 PM",
@@ -1692,7 +1692,7 @@ const s = [
   [
     "Colombia",
     "Brasil",
-    "https://www.turismobr.com/wp-content/uploads/2011/01/cristo-redentor.jpg",
+
     "Delta",
     2842,
     "3:15 PM",
@@ -1707,7 +1707,7 @@ const s = [
   [
     "Colombia",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "American",
     4245,
     "7:28 AM",
@@ -1722,7 +1722,7 @@ const s = [
   [
     "Colombia",
     "USA",
-    "https://www.tufranquiciausa.com/wp-content/uploads/2021/08/statue-liberty-usa.jpg",
+
     "Delta",
     4653,
     "7:34 AM",
@@ -1737,7 +1737,7 @@ const s = [
   [
     "Venezuela",
     "Chile",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/08/chile-pais.jpg",
+
     "American",
     669,
     "5:00 AM",
@@ -1752,7 +1752,7 @@ const s = [
   [
     "Venezuela",
     "Bolivia",
-    "https://tipsparatuviaje.com/wp-content/uploads/2019/07/salar-de-uyuni.jpg",
+
     "American",
     2139,
     "7:00 AM",
@@ -1767,7 +1767,7 @@ const s = [
   [
     "Venezuela",
     "Paraguay",
-    "https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/03/que-ver-y-hacer-en-paraguya-cataratas-iguazu.jpg",
+
     "Delta",
     4508,
     "4:00 PM",
@@ -1782,7 +1782,7 @@ const s = [
   [
     "Venezuela",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5556,
     "7:51 AM",
@@ -1797,7 +1797,7 @@ const s = [
   [
     "Venezuela",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     5543,
     "11:03 AM",
@@ -1812,7 +1812,7 @@ const s = [
   [
     "Bolivia",
     "Uruguay",
-    "https://miro.medium.com/max/1200/1*HF4lrcrK6DphopNWV1XxIg.jpeg",
+
     "Delta",
     3332,
     "12:35 PM",
@@ -1827,7 +1827,7 @@ const s = [
   [
     "Bolivia",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare American",
     3941,
     "7:05 AM",
@@ -1842,7 +1842,7 @@ const s = [
   [
     "Bolivia",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3440,
     "7:15 AM",
@@ -1857,7 +1857,7 @@ const s = [
   [
     "Bolivia",
     "Mexico",
-    "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2021/03/Mejores-lugares-para-visitar-en-Mexico-2021.jpg",
+
     "O'Hare United",
     3754,
     "11:18 AM",
@@ -1872,7 +1872,7 @@ const s = [
   [
     "Peru",
     "Canada",
-    "https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/Canada_Banff%20National%20Park_Staff-AH_3514_Alexander%20Howard_Lonely%20Planet.jpg?itok=a4fKUKa1",
+
     "Worth American",
     1970,
     "6:00 AM",
@@ -1887,7 +1887,7 @@ const s = [
   [
     "Peru",
     "Canada",
-    "https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/Canada_Banff%20National%20Park_Staff-AH_3514_Alexander%20Howard_Lonely%20Planet.jpg?itok=a4fKUKa1",
+
     "Worth American",
     1486,
     "9:02 AM",
@@ -1902,7 +1902,7 @@ const s = [
   [
     "Peru",
     "Canada",
-    "https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/Canada_Banff%20National%20Park_Staff-AH_3514_Alexander%20Howard_Lonely%20Planet.jpg?itok=a4fKUKa1",
+
     "Allegiant",
     367,
     "7:00 AM",
@@ -1917,7 +1917,7 @@ const s = [
   [
     "USA",
     "Peru",
-    "https://static.metrojourneys.com/wp-content/uploads/2019/07/machu-picchu-peru-tours.jpg",
+
     "Delta",
     518,
     "7:00 AM",
@@ -1932,7 +1932,7 @@ const s = [
   [
     "USA",
     "Peru",
-    "https://static.metrojourneys.com/wp-content/uploads/2019/07/machu-picchu-peru-tours.jpg",
+
     "United",
     749,
     "8:14 AM",
@@ -1947,7 +1947,7 @@ const s = [
   [
     "USA",
     "Colombia",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5f/dd/de/caption.jpg?w=500&h=300&s=1",
+
     "Delta",
     5027,
     "6:05 AM",
@@ -1962,7 +1962,7 @@ const s = [
   [
     "USA",
     "Colombia",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5f/dd/de/caption.jpg?w=500&h=300&s=1",
+
     "Delta",
     4800,
     "10:25 AM",
@@ -1977,7 +1977,7 @@ const s = [
   [
     "USA",
     "Venezuela",
-    "https://www.caracteristicas.co/wp-content/uploads/2018/08/venezuela-1-800x406.jpg",
+
     "Delta",
     2260,
     "7:20 AM",
