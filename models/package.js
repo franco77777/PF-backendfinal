@@ -19,6 +19,10 @@ const packageSchema = new Schema(
       type: String,
       required: true,
     },
+    discount: {
+      type: String,
+      required: true,
+    },
   },
   { versionKey: false }
 )
