@@ -30,10 +30,17 @@ const {
 } = require("../controllers/flightsAvailableController")
 
 const login = require("../controllers/loginController")
+const {
+  packageGet,
+  packageCreate,
+} = require("../controllers/packageController")
 
 const router = Router()
 
 router.get("/login", login)
+
+router.get("/package", packageGet)
+router.post("/package", packageCreate)
 
 router.get("/user", userGet)
 router.post("/user", userCreate)
