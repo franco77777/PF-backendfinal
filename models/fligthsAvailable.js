@@ -11,10 +11,7 @@ const flights3Schema = new Schema(
       type: String,
       required: true,
     },
-    img: {
-      type: String,
-      required: true,
-    },
+
     airport: {
       type: String,
       required: true,
